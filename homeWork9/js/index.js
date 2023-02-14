@@ -9,24 +9,46 @@
 // );
 //task 2
 
-function getDiffDays(str1, str2) {
-  let date1 = new Date(str1);
-  let date2 = new Date(str2);
+// function getDiffDays(str1, str2) {
+//   let date1 = new Date(str1);
+//   let date2 = new Date(str2);
 
-  if (isNaN(date1) || isNaN(date2)) {
+//   if (isNaN(date1) || isNaN(date2)) {
+//     console.error("Error: invalid date");
+//     return;
+//   }
+//   let differendsInTime = date2.getTime() - date1.getTime();
+
+//   if (differendsInTime < 0) {
+//     console.error("Error: your start date is later than end");
+//     return;
+//   }
+//   return differendsInTime / (24 * 60 * 60 * 1000);
+// }
+
+// console.log(getDiffDays("2020-01-01", "2020-01-17")); // 16
+// console.log(getDiffDays("2020-01-01", "2020-03-15")); // 74
+// console.log(getDiffDays("2222222222", "2020-03-15")); // Error: invalid date
+// console.log(getDiffDays("2021-01-02", "2020-03-15")); // Error: your start date is later than end
+
+//task 3
+
+function isWeekend(str) {
+  let date = new Date(str);
+  if (isNaN(date)) {
     console.error("Error: invalid date");
     return;
   }
-  let differendsInTime = date2.getTime() - date1.getTime();
+  switch (date.getDay()) {
+    case 0:
+    case 6:
+      return true;
 
-  if (differendsInTime < 0) {
-    console.error("Error: your start date is later than end");
-    return;
+    default:
+      return false;
   }
-  return differendsInTime / (24 * 60 * 60 * 1000);
 }
 
-console.log(getDiffDays("2020-01-01", "2020-01-17")); // 16
-console.log(getDiffDays("2020-01-01", "2020-03-15")); // 74
-console.log(getDiffDays("2222222222", "2020-03-15")); // Error: invalid date
-console.log(getDiffDays("2021-01-02", "2020-03-15")); // Error: your start date is later than end
+console.log(isWeekend("2022-02-12")); // true
+console.log(isWeekend("2022-02-13")); // true
+console.log(isWeekend("2022-02-09")); // false
