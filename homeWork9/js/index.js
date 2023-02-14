@@ -9,27 +9,27 @@
 // );
 //task 2
 
-// function getDiffDays(str1, str2) {
-//   let date1 = new Date(str1);
-//   let date2 = new Date(str2);
+function getDiffDays(str1, str2) {
+  let date1 = new Date(str1);
+  let date2 = new Date(str2);
 
-//   if (isNaN(date1) || isNaN(date2)) {
-//     console.error("Error: invalid date");
-//     return;
-//   }
-//   let differendsInTime = date2.getTime() - date1.getTime();
+  if ((date1 || date2) == "Invalid Date") {
+    console.error("Error: invalid date");
+    return;
+  }
+  let differendsInTime = date2.getTime() - date1.getTime();
 
-//   if (differendsInTime < 0) {
-//     console.error("Error: your start date is later than end");
-//     return;
-//   }
-//   return differendsInTime / (24 * 60 * 60 * 1000);
-// }
+  if (differendsInTime < 0) {
+    console.error("Error: your start date is later than end");
+    return;
+  }
+  return differendsInTime / (24 * 60 * 60 * 1000);
+}
 
-// console.log(getDiffDays("2020-01-01", "2020-01-17")); // 16
-// console.log(getDiffDays("2020-01-01", "2020-03-15")); // 74
-// console.log(getDiffDays("2222222222", "2020-03-15")); // Error: invalid date
-// console.log(getDiffDays("2021-01-02", "2020-03-15")); // Error: your start date is later than end
+console.log(getDiffDays("2020-01-01", "2020-01-17")); // 16
+console.log(getDiffDays("2020-01-01", "2020-03-15")); // 74
+console.log(getDiffDays("2222222222", "2020-03-15")); // Error: invalid date
+console.log(getDiffDays("2021-01-02", "2020-03-15")); // Error: your start date is later than end
 
 //task 3
 
@@ -55,24 +55,24 @@
 
 //task 4
 
-const person = {
-  fullName: "Sherlock Holmes",
-  address: {
-    street: "Baker Street",
-    city: "London",
-    house: "221b",
-  },
-};
+// const person = {
+//   fullName: "Sherlock Holmes",
+//   address: {
+//     street: "Baker Street",
+//     city: "London",
+//     house: "221b",
+//   },
+// };
 
-let json = JSON.stringify(person);
-const newPerson = JSON.parse(json);
+// let json = JSON.stringify(person);
+// const newPerson = JSON.parse(json);
 
-let {
-  fullName,
-  address: { street, city, house },
-} = newPerson;
+// let {
+//   fullName,
+//   address: { street, city, house },
+// } = newPerson;
 
-console.log(fullName);
-console.log(street);
-console.log(city);
-console.log(house);
+// console.log(fullName);
+// console.log(street);
+// console.log(city);
+// console.log(house);
