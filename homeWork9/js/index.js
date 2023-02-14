@@ -33,22 +33,46 @@
 
 //task 3
 
-function isWeekend(str) {
-  let date = new Date(str);
-  if (isNaN(date)) {
-    console.error("Error: invalid date");
-    return;
-  }
-  switch (date.getDay()) {
-    case 0:
-    case 6:
-      return true;
+// function isWeekend(str) {
+//   let date = new Date(str);
+//   if (isNaN(date)) {
+//     console.error("Error: invalid date");
+//     return;
+//   }
+//   switch (date.getDay()) {
+//     case 0:
+//     case 6:
+//       return true;
 
-    default:
-      return false;
-  }
-}
+//     default:
+//       return false;
+//   }
+// }
 
-console.log(isWeekend("2022-02-12")); // true
-console.log(isWeekend("2022-02-13")); // true
-console.log(isWeekend("2022-02-09")); // false
+// console.log(isWeekend("2022-02-12")); // true
+// console.log(isWeekend("2022-02-13")); // true
+// console.log(isWeekend("2022-02-09")); // false
+
+//task 4
+
+const person = {
+  fullName: "Sherlock Holmes",
+  address: {
+    street: "Baker Street",
+    city: "London",
+    house: "221b",
+  },
+};
+
+let json = JSON.stringify(person);
+const newPerson = JSON.parse(json);
+
+let {
+  fullName,
+  address: { street, city, house },
+} = newPerson;
+
+console.log(fullName);
+console.log(street);
+console.log(city);
+console.log(house);
