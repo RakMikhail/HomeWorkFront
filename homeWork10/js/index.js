@@ -23,7 +23,7 @@ class Employee {
 }
 
 const people1 = new Employee("Misha", "Rak", 26, "Rabotyaga", 16500);
-const people2 = new Employee("Kaban", "Kabanuch", 34, "Boss", 36500);
+const people2 = new Employee("Kaban", "Kabanuch", 26, "Boss", 36500);
 console.log(people1);
 people1.fullName;
 people1.salaryForYear();
