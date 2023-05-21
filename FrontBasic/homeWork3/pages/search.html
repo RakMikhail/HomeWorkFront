@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <div>
+        <a href="registration.html">Registration</a>
+        <a href="../index.html">Main page</a> 
+        <a href="authorization.html">Authorization</a>
+    </div>
+
+    <form action="https://tests.fomenko.top/echo/index.php" method="get">
+        <fieldset>
+            <legend>Поиск автомобиля</legend>
+                <label for="тип куз">Тип Кузова</label>
+                <div id="тип куз">
+                    
+                    <input type="checkbox" id="универсал" name="Универсал">
+                    <label for="универсал">Универсал</label>
+
+                    <input type="checkbox" id="седан" name="Седан">
+                    <label for="седан">Седан</label>
+                
+                    <input type="checkbox" id="хетчбек" name="Хетчбек">
+                    <label for="хетчбек">Хетчбек</label>
+                 
+                </div>
+
+                <div>
+                    <input type="checkbox" id="кросовер" name="Позашляховик / Кросовер">
+                    <label for="кросовер">Позашляховик / Кросовер</label>
+                    
+                    <input type="checkbox" id="купе" name="Купе">
+                    <label for="купе">Купе</label>
+                
+                    <input type="checkbox" id="Кабриолет" name="Кабриолет">
+                    <label for="Кабриолет">Кабриолет</label>
+                </div>
+
+                <label for="марка">Марка автомобиля</label>
+                <div id="марка">
+                    <select name="mark" id="mark">
+                        <option value="0" selected="selected">Выберите марку автомобиля</option>
+                        <option value="1">BMW</option>
+                        <option value="2">Audi</option>
+                        <option value="3">Chevrolet</option>
+                        <option value="4">Ford</option>
+                        <option value="5">Honda</option>
+                        <option value="6">Mazda</option>
+                        <option value="7">Nissan</option>
+                        <option value="8">Opel</option>
+                    </select>
+                </div>
+
+                <label for="country">Страна производитель</label>
+                <div>
+                    <select name="country_id" id="country">
+                        <option value="0" selected="selected">Оберіть країну</option>
+                        <option value="1">Україна</option>
+                        <option value="2">Польша</option>
+                        <option value="3">Іспанія</option>
+                    </select>
+                </div>
+
+                    <label for="price">Цена</label>
+                <div>
+                    <input type="number" name="price_from" id="price_from" placeholder="От">
+                    <input type="number" name="price_to" id="price_to" placeholder="До">
+                    <select name="currency" id="currency" class="gray">
+                        <option value="USD" selected="selected">$</option>
+                        <option value="EUR">€</option>
+                        <option value="UAH">грн.</option>
+                    </select>
+                </div>
+                <label for="year">Год выпуска</label>
+                <div id="year">
+                    <select name="at_year_from" id="at_year_from">
+                        <option value="0">Год, от</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                    <select name="at_year_to" id="at_year_to">
+                        <option value="0">Год, до</option>
+                        <option value="2023">2023</option>
+                        <option value="2022">2022</option>
+                        <option value="2021">2021</option>
+                        <option value="2020">2020</option>
+                        <option value="2019">2019</option>
+                    </select>
+                </div>
+
+                <label for="состояние">Состояние</label>
+                <div id="состояние">
+                    <div>
+                        <input type="checkbox" name="broken_car" id="broken">
+                        <label for="broken">Битая</label>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" name="credit" id="In_Credit">
+                        <label for="In_Credit">В кредите</label>
+                        
+                    </div>
+                    <div>
+                        <input type="checkbox" name="not_cleared_car" id="not_cleared_car">
+                        <label for="not_cleared_car">Растаможенная</label>
+                    </div>
+                </div>
+
+                <label for="fuel">Тип топлива</label>
+                <div >
+                    <select name="type.fuel" id="fuel">
+                        <option value="0" selected="selected">Выберите тип топлива</option>
+                        <option value="type.fuel[1]">Дизель</option>
+                        <option value="type.fuel[2]">Бензин</option>
+                        <option value="type.fuel[3]">Газ</option>
+                        <option value="type.fuel[4]">Електро</option>
+                    </select>
+                </div>
+                <label for="Gearbox">Тип коробки передач</label>
+                <div>
+                    <select name="Gearbox type" id="Gearbox">
+                        <option value="0" selected="selected">КПП</option>
+                        <option value="type.gearbox[1]">Ручная</option>
+                        <option value="type.gearbox[2]">Автомат</option>
+                        <option value="type.gearbox[3]">Робот</option>
+                    </select>
+                </div>
+                <label for="color">Цвет</label>
+                <div>
+                    <select name="color" id="color">
+                        <option value="0" selected="selected">Выберите цвет</option>
+                        <option value="1">Черный</option>
+                        <option value="2">Красный</option>
+                        <option value="3">Белый</option>
+                        <option value="4">Синий</option>
+                    </select>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Action</legend>
+            <button type="submit">Подтвердить</button>
+            <button type="reset">Сбросить</button>
+        </fieldset>
+    </form>
+</body>
+</html>
