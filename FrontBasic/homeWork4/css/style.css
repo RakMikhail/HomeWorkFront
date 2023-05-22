@@ -1,0 +1,37 @@
+p {
+    color: red;
+    /* Вес селектора - 1 */
+  }
+  #secondparagraph {
+    color: blue;
+    text-transform: uppercase;
+    /* Вес селектора - 100 */
+  }
+  .thirdparagraph {
+    color: yellow;
+    background-color: blue;
+    font-size: 60px;
+    font-style: italic;
+    /* Вес селектора - 10 */
+  }
+  .fourthparagraph.newfourthparagraph {
+    color: white;
+    background-color: black;
+    /* Вес селектора - 20 */
+  }
+  p#newfifthparagraph.fifthparagraph {
+    color: purple;
+    font-size: x-large;
+    text-transform: uppercase;
+    /* Вес селектора - 111 */
+  }
+  .sixthparagraph {
+    color: rgb(7, 255, 7);
+    /* Вес селектора - 10 */
+  }
+  p strong {
+    color: orange;
+    font-style: italic;
+    /* Вес селектора - 2 */
+  }
+  
