@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+}
+
+div{
+    display: block;
+}
+
+.header{
+    min-height: 100px;
+    background-color: aqua;
+}
+.main{
+    min-height: calc(100vh - 100px - 100px);
+    width: calc(100% - 500px);
+    background-color: blue;
+    float:left;
+    margin-left: 300px;
+}
+.left{
+    min-height: calc(100vh - 100px - 100px);
+    width: 300px;
+    float:left;
+    background-color: red;
+    margin-left: calc(-100% + 200px);
+}
+.right{
+    min-height: calc(100vh - 100px - 100px);
+    width: 200px;
+    float:left;
+    background-color: yellowgreen;
+}
+.footer{
+    min-height: 100px;
+    background-color: darkgoldenrod;
+}
+.clearfix{
+    clear: both;
+}
