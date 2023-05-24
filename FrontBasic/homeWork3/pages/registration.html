@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registration</title>
-</head>
-<body>
-    <div><a href="authorization.html">Authorization</a> <a href="../index.html">Main page</a> <a href="search.html">Search</a></div>
-    <form action="https://tests.fomenko.top/echo/index.php" method="post" >
-        
-        <fieldset >
-            <legend>Registration</legend>
-            
-          <div>
+  </head>
+  <body>
+    <div>
+      <a href="authorization.html">Authorization</a>
+      <a href="../index.html">Main page</a> <a href="search.html">Search</a>
+    </div>
+    <form action="https://tests.fomenko.top/echo/index.php" method="post">
+      <fieldset>
+        <legend>Registration</legend>
+
+        <div>
           <label for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Введите почту">  
-        </div>
-        
-        <div>
-            <label for="pass">Password</label>
-        <input id="pass" type="password" name="password" placeholder="Введите пароль">
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Введите почту"
+          />
         </div>
 
         <div>
-            <label for="repeat">Repeat password</label>
-        <input id="repeat" type="password" name="repeat password" placeholder="Повторите пароль">
+          <label for="pass">Password</label>
+          <input
+            id="pass"
+            type="password"
+            name="password"
+            placeholder="Введите пароль"
+          />
         </div>
-        
-        </fieldset>
 
-        <fieldset >
-            <legend>Action</legend>
-            <button type="submit">Подтвердить</button>
+        <div>
+          <label for="repeat">Repeat password</label>
+          <input
+            id="repeat"
+            type="password"
+            name="repeat password"
+            placeholder="Повторите пароль"
+          />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Action</legend>
+        <button type="submit">Подтвердить</button>
         <button type="reset">Сбросить</button>
-        </fieldset>
-        
-        
+      </fieldset>
     </form>
-</body>
+  </body>
 </html>
