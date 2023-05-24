@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+.cards {
+  border: 3px solid red;
+  padding: 10px;
+  background-color: rgb(204, 219, 120);
+}
+.card-item {
+  background-color: rgb(203, 218, 181);
+  border: 2px solid black;
+  width: calc(33.3333% - 20px);
+  float: left;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.card-item-image {
+  display: block;
+  width: 100%;
+}
+.card-item-title {
+  display: block;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.description {
+  display: block;
+  background-color: wheat;
+}
+.clearfix {
+  clear: both;
+}
+td {
+  text-align: center;
+  text-align: center;
+  height: "40px";
+  width: "290px";
+}
