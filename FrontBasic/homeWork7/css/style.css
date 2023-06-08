@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  gap: 2px;
+  row-gap: 10px;
+}
+.main {
+  background-color: beige;
+  flex-basis: 700px;
+  flex-grow: 1;
+  order: 2;
+}
+.right {
+  background-color: beige;
+  flex-basis: 20%;
+  order: 3;
+}
+.left {
+  background-color: beige;
+  flex-basis: 15%;
+  order: 1;
+}
+.footer {
+  background-color: rgb(77, 75, 75);
+  width: 100%;
+}
+
+.navbar {
+  background-color: beige;
+  flex-basis: 100%;
+  height: 30px;
+  text-align: center;
+}
+.number {
+  display: inline;
+}
+
+.header {
+  background-color: beige;
+}
+.moreleft {
+  background-color: beige;
+  flex-basis: 20%;
+}
+
+a {
+  position: relative;
+  left: 33%;
+  margin: 15px;
+  color: black;
+}
+
+.cards {
+  justify-content: space-between;
+}
+.card-item {
+  display: inline-block;
+  width: 33%;
+}
+
+.card-item-image {
+  width: 100%;
+  display: block;
+}
+
+.button {
+  float: right;
+  background-color: gray;
+  color: beige;
+}
+.card-item-title {
+  color: black;
+  font-weight: bold;
+}
+.checkbox {
+  display: flex;
+}
+.textFooter {
+  text-align: center;
+}
+.misha {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: red;
+}
+
+.babiy {
+  max-width: 100%;
+}
+.headMisha {
+  background-color: red;
+}
+.qwe {
+  background-color: red;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: 500px;
+}
