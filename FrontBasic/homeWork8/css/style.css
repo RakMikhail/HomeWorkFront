@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+.flexbox1 {
+  overflow: hidden;
+}
+.flexbox1 > div {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+}
+.item1 {
+  float: left;
+}
+.item2 {
+  float: right;
+}
+
+.flexbox2 {
+  overflow: hidden;
+}
+.item3 {
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(228, 13, 13);
+}
+.flexbox2-left {
+  float: left;
+}
+.flexbox2-right {
+  display: flex;
+  float: right;
+}
+/* 3 block */
+.item4 {
+  background-color: burlywood;
+  margin: 5px;
+  width: 100px;
+  height: 100px;
+}
+.flexbox3-left {
+  float: left;
+}
+.flexbox3-right {
+  float: right;
+}
+.flexbox3 > div {
+  display: flex;
+}
+.flexbox3 {
+  overflow: hidden;
+}
+/* 4 block */
+.flexbox4 {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 220px;
+}
+.item5 {
+  background-color: chocolate;
+  margin: 5px;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+.item5-large {
+  background-color: chocolate;
+  margin: 5px;
+  float: left;
+  height: 210px;
+  width: 100px;
+}
+/* 5 block */
+.flexbox5 {
+  overflow: hidden;
+  margin-left: 0 auto;
+  width: 220px;
+  float: right;
+}
+.item6 {
+  background-color: crimson;
+  margin: 5px;
+  height: 100px;
+  float: left;
+  width: 100px;
+}
+.item6-large {
+  background-color: crimson;
+  margin: 5px;
+  float: left;
+  height: 210px;
+  width: 100px;
+}
