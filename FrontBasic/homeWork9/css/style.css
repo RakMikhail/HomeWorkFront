@@ -1,0 +1,274 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+.header {
+  background-color: #eeeff1;
+
+  min-height: 700px;
+  min-width: 1920px;
+
+  padding-top: 80px;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+.header-navbar {
+  margin-bottom: 40px;
+}
+.header-navbar__list {
+  list-style: none;
+  display: flex;
+  column-gap: 40px;
+}
+
+.header-navbar__link {
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.header-navbar__link.active {
+  font-weight: 500;
+
+  color: #34547a;
+}
+
+.header-content__title {
+  margin-top: 150px;
+  margin-bottom: 33px;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 79px;
+
+  color: #000000;
+}
+.header-content__description {
+  width: 540px;
+  height: 67px;
+  left: 400px;
+  top: 362px;
+  /* p */
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  margin-bottom: 65px;
+
+  color: #727272;
+}
+
+.header-content__link {
+  width: 225px;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  background-color: #34547a;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 141px;
+
+  color: #ffffff;
+}
+.abouteMe {
+  background-color: #ffffff;
+  font-family: "Roboto";
+  font-style: normal;
+
+  width: 540px;
+  height: 67px;
+
+  margin: 0 auto;
+  margin-top: 115px;
+}
+.abouteMe__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 50px;
+
+  color: #000000;
+}
+.abouteMe__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  color: #727272;
+}
+
+.blueLine {
+  min-width: 1920px;
+  min-height: 250px;
+  margin-top: 190px;
+
+  background: #34547a;
+  font-family: "Roboto";
+  font-style: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blueLine-records {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 50px;
+}
+.blueLine__record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+
+  align-items: flex-start;
+}
+.count {
+  width: 36px;
+  height: 19px;
+  left: 855px;
+  top: 1162px;
+
+  /* h3 */
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+.project {
+  width: 71px;
+  height: 15px;
+
+  /* p */
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #ffffff;
+}
+
+.main {
+  min-width: 1920px;
+  min-height: 1004px;
+
+  /* Silver */
+
+  background: #eeeff1;
+}
+
+.howIwork-title {
+  width: 403px;
+  height: 30px;
+  margin: 0 auto;
+
+  padding-top: 100px;
+
+  /* h2 */
+
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+
+  color: #000000;
+}
+.howIwork-description {
+  width: 540px;
+  height: 67px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+
+  margin: 0 auto;
+
+  margin-top: 70px;
+  margin-bottom: 60px;
+  color: #727272;
+}
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 1110px;
+  height: 600px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(https://www.youtube.com/watch?v=UxqUIZ6kBTI&ab_channel=AlchemiaObrazu);
+}
+.footer {
+  min-width: 1920px;
+  min-height: 151px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  background: #34547a;
+}
+.block {
+  margin: 0 auto;
+  padding-right: 910px;
+}
+.name {
+  width: 130px;
+  height: 19px;
+
+  /* h3 */
+
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+
+  color: #ffffff;
+}
+.rights {
+  width: 193px;
+  height: 12px;
+
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: #ffffff;
+}
