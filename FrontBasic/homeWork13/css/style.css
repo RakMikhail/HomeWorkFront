@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  background-color: rgb(31, 87, 104);
+}
+.right {
+  flex-basis: 100%;
+  order: 1;
+
+  background-color: rgb(31, 87, 104);
+}
+.left {
+  flex-basis: 100%;
+  order: 0;
+
+  background-color: rgb(31, 87, 104);
+}
+.wrap {
+  background-color: rgb(31, 87, 104);
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+.qwe {
+  height: 160px;
+  width: 170px;
+  transition: 0.5s;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 15px;
+}
+.imп:nth-child(1) {
+  animation-delay: 1s;
+}
+.green {
+  background-image: url(../img/lilypad-green.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.imgGreen {
+  animation-name: imgGreen;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes imgGreen {
+  0% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-30px);
+  }
+}
+.imgYellow {
+  animation-name: imgYellow;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes imgYellow {
+  34% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-30px);
+  }
+}
+.imgRed {
+  animation-name: imgRed;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes imgRed {
+  67% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
+}
+.yellow {
+  background-image: url(../img/lilypad-yellow.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+.red {
+  background-image: url(../img/lilypad-red.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
